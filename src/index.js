@@ -19,6 +19,7 @@ fakeAxios()
   .then(data => {
     // Chrome invokes this when the data arrives in the distant future
     // I can do whatever with the data here
+    // 
     // BUT ONLY IN HERE DO I HAVE ACCESS TO THE DATA
     console.log('hurray, the data is here')
     console.log(data)
