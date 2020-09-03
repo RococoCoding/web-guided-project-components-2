@@ -116,7 +116,9 @@ console.log('actually axios', axios)
 //   })
 fetch('https://dog.ceo/api/breed/mastiff/images/random/3')
   .then(partOfTheResponse => {
-
+    // fetch is sooo eager to give sth quick,
+    // it resolves some data before the body is in
+    return partOfTheResponse.json() //
   })
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
