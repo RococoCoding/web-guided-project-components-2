@@ -18,16 +18,16 @@ function fakeAxios() {
 fakeAxios()
   .then(data => {
     // Chrome invokes this when the data arrives in the distant future
-    // I can do whatever with the data here
-    // 
-    // BUT ONLY IN HERE DO I HAVE ACCESS TO THE DATA
+    // We can do whatever with the data, but only in here
+    // We don't know necessarily what the data will look like. Use breakpoints!
+    // REMEMBER: ONLY IN HERE DO WE HAVE ACCESS TO THE DATA
     console.log('hurray, the data is here')
     console.log(data)
     // throw new Error('ARGH that hurt') // artificial error
   })
   .catch(error => {
     // anything goes wrong during I/O (or even inside the .then)
-    // and this callback gets executed by Chrome
+    // and this callback gets executed by Chrome, passing the error
     debugger
   })
 
