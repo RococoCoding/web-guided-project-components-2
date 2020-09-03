@@ -7,7 +7,10 @@
 // WE SELDOM DO THE FOLLOWING
 // WE SELDOM DO THE FOLLOWING
 // WE SELDOM DO THE FOLLOWING
-
+// a function that returns a Promise (like Axios)
+function fakeAxios() {
+  return Promise.resolve({ success: true, data: { foo: 'bar' } })
+}
 
 // 👉 TASK 1- Test out the following endpoints:
 
