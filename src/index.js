@@ -27,7 +27,7 @@ fakeAxios()
     return data
   })
   .then(moreData => {
-    
+    console.log('here is your stuff you returned in the other .then', moreData)
   })
   .catch(error => {
     // anything goes wrong during I/O (or even inside the .then)
