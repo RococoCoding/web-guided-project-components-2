@@ -97,7 +97,7 @@ console.log('actually axios', axios)
 //    * IN ANY CASE: log "done" to the console
 axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
   .then(stuff => {
-    debugger
+    console.log('', stuff.data)
   })
   .catch(err => {
     debugger
