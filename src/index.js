@@ -25,8 +25,8 @@ fakeAxios()
     console.log('hurray, the data is here')
     console.log(data)
     // throw new Error('ARGH that hurt') // artificial error
-    return data
-    // if we return another promise from here
+    return data //  this gets injected into the next .then
+    // if we return another promise instead of "normal" data
     // we can get that future data in the next .then
   })
   .then(moreData => {
