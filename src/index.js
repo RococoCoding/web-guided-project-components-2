@@ -24,6 +24,10 @@ fakeAxios()
     console.log('hurray, the data is here')
     console.log(data)
     // throw new Error('ARGH that hurt') // artificial error
+    return data
+  })
+  .then(moreData => {
+    
   })
   .catch(error => {
     // anything goes wrong during I/O (or even inside the .then)
