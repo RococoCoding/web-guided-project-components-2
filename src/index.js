@@ -18,10 +18,13 @@ function fakeAxios() {
 fakeAxios()
   .then(data => {
     // I can do whatever with the data
+    console.log('hurray, the data is here')
   })
   .catch(error => {
     // Here is the chance to do sth about the error
   })
+
+  console.log('hello world')
 
 // 👉 TASK 1- Test out the following endpoints:
 
