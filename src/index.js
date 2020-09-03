@@ -18,6 +18,7 @@ function fakeAxios() {
 fakeAxios()
   .then(data => {
     // I can do whatever with the data
+    // BUT ONLY IN HERE DO I HAVE ACCESS TO THE DATA
     console.log('hurray, the data is here')
     console.log(data)
     throw new Error('ARGH that hurt')
@@ -26,7 +27,7 @@ fakeAxios()
     debugger
   })
 
-console.log('hello world')
+console.log('hello world') // this will run BEFORE the .then/.catch callbacks
 
 
 // 👉 TASK 1- Test out the following endpoints:
