@@ -20,9 +20,10 @@ fakeAxios()
     // I can do whatever with the data
     console.log('hurray, the data is here')
     console.log(data)
+    throw new Error('ARGH that hurt')
   })
   .catch(error => {
-    
+    debugger
   })
 
 console.log('hello world')
