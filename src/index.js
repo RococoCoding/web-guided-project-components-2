@@ -95,37 +95,37 @@ console.log('actually axios', axios)
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
 //    * ON FAILURE: log the error to the console
 //    * IN ANY CASE: log "done" to the console
-// axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
-//   .then(stuff => {
-//     // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
-//     // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
-//     // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
-//     console.log('response body axios puts in "data" property', stuff.data)
-//     console.log('the array of dog images', stuff.data.message)
-//     const dogImageURLsArr = stuff.data.message
+axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
+  .then(stuff => {
+    // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
+    // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
+    // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
+    console.log('response body axios puts in "data" property', stuff.data)
+    console.log('the array of dog images', stuff.data.message)
+    const dogImageURLsArr = stuff.data.message
 
-//     dogImageURLsArr.forEach(URL => {
-//       const dogCard = dogCardMaker({ imageURL: URL, breed: 'mastiff' })
-//       entryPoint.appendChild(dogCard)
-//     })
-//     // function dogCardMaker expects this: { imageURL, breed }
-//   })
-//   .catch(err => {
-//     console.log(err)
-//     debugger
-//   })
-fetch('https://dog.ceo/api/breed/mastiff/images/random/3')
-  .then(partOfTheResponse => {
-    // fetch is sooo eager to give sth quick,
-    // it resolves some data before the body is in
-    return partOfTheResponse.json() // this operation ALSO returns a promise
-  })
-  .then(jsonStuff => {
-    debugger
+    dogImageURLsArr.forEach(URL => {
+      const dogCard = dogCardMaker({ imageURL: URL, breed: 'mastiff' })
+      entryPoint.appendChild(dogCard)
+    })
+    // function dogCardMaker expects this: { imageURL, breed }
   })
   .catch(err => {
+    console.log(err)
     debugger
   })
+// fetch('https://dog.ceo/api/breed/mastiff/images/random/3')
+//   .then(partOfTheResponse => {
+//     // fetch is sooo eager to give sth quick,
+//     // it resolves some data before the body is in
+//     return partOfTheResponse.json() // this operation ALSO returns a promise
+//   })
+//   .then(jsonStuff => {
+//     debugger
+//   })
+//   .catch(err => {
+//     debugger
+//   })
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
