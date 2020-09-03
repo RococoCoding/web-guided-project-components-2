@@ -16,8 +16,12 @@ function fakeAxios() {
 // WE DO THE FOLLOWING ALL THE TIME
 // WE DO THE FOLLOWING ALL THE TIME
 fakeAxios()
-  .then()
-  .catch()
+  .then(data => {
+    // I can do whatever with the data
+  })
+  .catch(error => {
+    // Here is the chance to do sth about the error
+  })
 
 // 👉 TASK 1- Test out the following endpoints:
 
