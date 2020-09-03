@@ -27,7 +27,7 @@ fakeAxios()
     // throw new Error('ARGH that hurt') // artificial error
     return data //  this gets injected into the next .then
     // if we return another promise instead of "normal" data
-    // we can get that future data in the next .then
+    // the "future" data gets injected into the next .then
   })
   .then(moreData => {
     debugger
@@ -36,7 +36,7 @@ fakeAxios()
     console.log('here is your stuff you returned in the other .then', moreData)
   })
   .catch(error => {
-    // anything goes wrong during I/O (or even inside the .then)
+    // anything goes wrong during I/O (or even inside one of the .then)
     // and this callback gets executed by Chrome, passing the error
     debugger
   })
