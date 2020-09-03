@@ -100,7 +100,11 @@ axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
     debugger
     console.log('response body axios puts in "data" property', stuff.data)
     console.log('the array of dog images', stuff.data.message)
-    const dogImageURLs
+    const dogImageURLsArr = stuff.data.message
+
+    dogImageURLsArr.forEach(URL => {
+      const dogCard = 
+    })
     // function dogCardMaker expects this: { imageURL, breed }
   })
   .catch(err => {
