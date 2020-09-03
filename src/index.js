@@ -121,7 +121,10 @@ fetch('https://dog.ceo/api/breed/mastiff/images/random/3')
     return partOfTheResponse.json() // this operation ALSO returns a promise
   })
   .then(jsonStuff => {
-    de
+    debugger
+  })
+  .catch(err => {
+    debugger
   })
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
