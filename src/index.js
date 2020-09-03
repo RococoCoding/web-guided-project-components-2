@@ -32,7 +32,7 @@ fakeAxios()
   })
 
 console.log('hello world') // this will run BEFORE the .then/.catch callbacks
-// THE DATA WILL NEVER BE HERE!!! THE CODE IN THIS REGION RAN 
+// THE DATA WILL NEVER BE HERE!!! THE CODE IN THIS REGION RAN EONS BEFORE THE DATA RETURNED!!!!
 
 // 👉 TASK 1- Test out the following endpoints:
 
