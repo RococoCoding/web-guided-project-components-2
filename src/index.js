@@ -98,6 +98,7 @@ console.log('actually axios', axios)
 axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
   .then(stuff => {
     console.log('response body axios puts in "data" property', stuff.data)
+    console.log('the array of dog images', stuff.data.message)
   })
   .catch(err => {
     debugger
