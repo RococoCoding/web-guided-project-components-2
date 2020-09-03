@@ -103,7 +103,8 @@ axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
     const dogImageURLsArr = stuff.data.message
 
     dogImageURLsArr.forEach(URL => {
-      const dogCard = 
+      const dogCard = dogCardMaker({ imageURL: URL, breed: 'mastiff' })
+      entryPoint.appendChild(dogCard)
     })
     // function dogCardMaker expects this: { imageURL, breed }
   })
