@@ -97,7 +97,6 @@ console.log('actually axios', axios)
 //    * IN ANY CASE: log "done" to the console
 axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
   .then(stuff => {
-    debugger
     console.log('response body axios puts in "data" property', stuff.data)
     console.log('the array of dog images', stuff.data.message)
     const dogImageURLsArr = stuff.data.message
