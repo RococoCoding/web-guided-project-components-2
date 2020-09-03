@@ -27,6 +27,8 @@ fakeAxios()
     return data
   })
   .then(moreData => {
+    // you can return from the previous .then all you want
+    // then you need another .then
     console.log('here is your stuff you returned in the other .then', moreData)
   })
   .catch(error => {
