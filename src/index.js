@@ -15,7 +15,8 @@ function fakeAxios() {
 // WE DO THE FOLLOWING ALL THE TIME
 // WE DO THE FOLLOWING ALL THE TIME
 // WE DO THE FOLLOWING ALL THE TIME
-fakeAxios().then() // success
+fakeAxios()
+  .then()
   .catch()
 
 // 👉 TASK 1- Test out the following endpoints:
