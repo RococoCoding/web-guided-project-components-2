@@ -19,6 +19,7 @@ fakeAxios()
   .then(data => {
     // I can do whatever with the data
     console.log('hurray, the data is here')
+    console.log(data)
   })
   .catch(error => {
     // Here is the chance to do sth about the error
