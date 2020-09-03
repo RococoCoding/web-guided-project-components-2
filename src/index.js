@@ -24,7 +24,7 @@ fakeAxios()
     // Here is the chance to do sth about the error
   })
 
-  console.log('hello world')
+console.log('hello world')
 
 // 👉 TASK 1- Test out the following endpoints:
 
