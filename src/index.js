@@ -118,7 +118,10 @@ fetch('https://dog.ceo/api/breed/mastiff/images/random/3')
   .then(partOfTheResponse => {
     // fetch is sooo eager to give sth quick,
     // it resolves some data before the body is in
-    return partOfTheResponse.json() //
+    return partOfTheResponse.json() // this operation ALSO returns a promise
+  })
+  .then(jsonStuff => {
+    de
   })
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
