@@ -22,7 +22,7 @@ fakeAxios()
     console.log(data)
   })
   .catch(error => {
-    // Here is the chance to do sth about the error
+    
   })
 
 console.log('hello world')
