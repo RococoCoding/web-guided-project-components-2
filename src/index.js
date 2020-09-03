@@ -28,6 +28,7 @@ fakeAxios()
 
 console.log('hello world')
 
+
 // 👉 TASK 1- Test out the following endpoints:
 
 //     https://lambda-times-api.herokuapp.com/friends
