@@ -115,8 +115,8 @@ console.log('actually axios', axios)
 //     debugger
 //   })
 fetch('https://dog.ceo/api/breed/mastiff/images/random/3')
-  .then(response => {
-    
+  .then(partOfTheResponse => {
+
   })
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
