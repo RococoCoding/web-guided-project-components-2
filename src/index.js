@@ -111,6 +111,7 @@ axios.get('https://dog.ceo/api/breed/mastiff/images/randomMMMMMMMMMMMMMMMMMMMMMM
     // function dogCardMaker expects this: { imageURL, breed }
   })
   .catch(err => {
+    console.log(err)
     debugger
   })
 
