@@ -96,6 +96,10 @@ console.log('actually axios', axios)
 //    * ON FAILURE: log the error to the console
 //    * IN ANY CASE: log "done" to the console
 axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
+  .then(stuff => {
+
+  })
+  .
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
