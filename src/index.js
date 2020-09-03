@@ -1,8 +1,7 @@
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
 
-// WE SELDOM DO THE FOLLOWING
-// WE SELDOM DO THE FOLLOWING
+
 // WE SELDOM DO THE FOLLOWING
 // WE SELDOM DO THE FOLLOWING
 // WE SELDOM DO THE FOLLOWING
@@ -11,6 +10,13 @@
 function fakeAxios() {
   return Promise.resolve({ success: true, data: { foo: 'bar' } })
 }
+
+// WE DO THE FOLLOWING ALL THE TIME
+// WE DO THE FOLLOWING ALL THE TIME
+// WE DO THE FOLLOWING ALL THE TIME
+// WE DO THE FOLLOWING ALL THE TIME
+// WE DO THE FOLLOWING ALL THE TIME
+
 
 // 👉 TASK 1- Test out the following endpoints:
 
