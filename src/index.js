@@ -21,9 +21,11 @@ fakeAxios()
     // BUT ONLY IN HERE DO I HAVE ACCESS TO THE DATA
     console.log('hurray, the data is here')
     console.log(data)
-    throw new Error('ARGH that hurt')
+    // throw new Error('ARGH that hurt')
   })
   .catch(error => {
+    // anything goes wrong during I/O (or even inside the .then)
+    // and this callback gets executed by Chrome
     debugger
   })
 
