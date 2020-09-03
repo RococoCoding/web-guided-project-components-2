@@ -122,6 +122,9 @@ axios.get('https://dog.ceo/api/breed/mastiff/images/random/3')
 //   })
 //   .then(jsonStuff => {
 //     debugger
+      // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
+      // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
+      // THIS IS THE ONLY PLACE WHERE WE HAVE ACCESS TO THE IMAGE URLS FROM THE ENDPOINT
 //   })
 //   .catch(err => {
 //     debugger
