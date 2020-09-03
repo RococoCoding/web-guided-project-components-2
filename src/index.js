@@ -15,7 +15,7 @@ function fakeAxios() {
 // WE DO THE FOLLOWING ALL THE TIME
 // WE DO THE FOLLOWING ALL THE TIME
 // WE DO THE FOLLOWING ALL THE TIME
-// WE DO THE FOLLOWING ALL THE TIME
+const data = fakeAxios()
 
 
 // 👉 TASK 1- Test out the following endpoints:
