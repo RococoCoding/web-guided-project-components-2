@@ -21,6 +21,7 @@ fakeAxios()
     // We can do whatever with the data, but only in here
     // We don't know necessarily what the data will look like. Use breakpoints!
     // REMEMBER: ONLY IN HERE DO WE HAVE ACCESS TO THE DATA
+    debugger
     console.log('hurray, the data is here')
     console.log(data)
     // throw new Error('ARGH that hurt') // artificial error
@@ -29,6 +30,7 @@ fakeAxios()
     // we can get that future data in the next .then
   })
   .then(moreData => {
+    debugger
     // you can return from the previous .then all you want
     // then you need another .then
     console.log('here is your stuff you returned in the other .then', moreData)
